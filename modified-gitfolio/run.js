@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-const outDir = path.resolve("./root/" || process.env.OUT_DIR);
+const outDir = path.resolve("./docs/" || process.env.OUT_DIR);
 const app = express();
 app.use(express.static(`${outDir}`));
 
